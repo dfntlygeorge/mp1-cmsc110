@@ -39,6 +39,14 @@
   gap: 0.5rem;
 }
 
+.products-section {
+  padding-block: 0.5rem;
+}
+
+.product-card-container {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 @media (max-width: 600px) {
   .filters {
     display: none;
