@@ -6,7 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/util.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/products.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -22,32 +22,37 @@
     </header>
     <main>
       <!-- SEARCH INPUT FOR SMALLER SCREENS, HIDDEN AT LARGE SCREENS-->
-      <div>
-        <form action="#">
-          <input type="text" />
-          <button>search</button>
+      <div class="product-nav">
+        <form action="#" class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." />
+          <!-- TODO: REMOVE THIS BUTTON ON SMALLER SCREEN -->
+          <button class="btn search-btn" type="submit">
+            <img
+              src="public/icons/white-search-icon.svg"
+              alt="search icon"
+              width="25px"
+            />
+          </button>
+          <button class="btn-dark dialog-filter-btn">
+            <img
+              src="public/icons/white-dialog.svg"
+              alt="search icon"
+              width="25px"
+            />
+          </button>
         </form>
-      </div>
-      <!-- CONTAINER FOR THE SIDEBAR AND PRODUCTS SECTION -->
-      <div>
-        <!-- SIDEBAR FOR LARGE SCREEN ONLY, REMOVE AT SMALLER SCREENS -->
-        <div>
-          <div>
-            <form action="#">
-              <input type="text" />
-              <button>search</button>
-            </form>
-          </div>
-          <!-- FILTERS -->
-          <div></div>
-        </div>
-        <!-- PRODUCTS SECTION -->
-        <div>
-          <section></section>
-          <!-- PAGINATION - NOT FUNCTIONAL AT ALL SO SAD -->
-          <div></div>
+        <!-- TODO: REMOVE THIS ON SMALL SCREENS AND THEN DISPLAY A DIALOG BUTTON -->
+        <div class="filters">
+          <button class="btn-dark">Genre</button>
+          <button class="btn-dark">Artist</button>
+          <button class="btn-dark">Price Range</button>
         </div>
       </div>
+
+      <!-- PRODUCTS SECTION -->
+      <section></section>
+      <!-- PAGINATION - NOT FUNCTIONAL AT ALL SO SAD -->
+      <div></div>
     </main>
     <!-- FOOTER -->
     <footer>
