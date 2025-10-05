@@ -72,3 +72,18 @@
 .review-card blockquote {
   font-style: italic;
 }
+
+.new-release-title,
+.explore-genres-title {
+  text-decoration: underline;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.new-release-title {
+  color: var(--accent);
+}
+
+.discovery-section div {
+  margin-top: 1rem;
+}
